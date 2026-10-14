@@ -31,7 +31,7 @@ def scan_projects() -> List[ProjectInfo]:
 
     subdirs = [
         d for d in SOURCE_DIR.iterdir()
-        if d.is_dir() and not d.name.startswith(".") and not d.name.startswith("._")
+        if d.is_dir() and not d.is_symlink() and not d.name.startswith(".") and not d.name.startswith("._")
     ]
     subdirs.sort(key=lambda x: x.name.lower())
 
