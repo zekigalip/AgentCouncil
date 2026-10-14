@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+SOURCE_PATH="${BASH_SOURCE[0]}"
+while [ -L "$SOURCE_PATH" ]; do
+  DIR="$(cd -P "$(dirname "$SOURCE_PATH")" && pwd)"
+  SOURCE_PATH="$(readlink "$SOURCE_PATH")"
+  [[ $SOURCE_PATH != /* ]] && SOURCE_PATH="$DIR/$SOURCE_PATH"
+done
+SCRIPT_DIR="$(cd -P "$(dirname "$SOURCE_PATH")" && pwd)"
+exec python3 "$SCRIPT_DIR/main.py" "$@"

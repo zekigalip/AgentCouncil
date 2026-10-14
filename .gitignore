@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# Session History (Private project discussions)
+history/
+
+# macOS & External Volume Metadata
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+
+# Environment & IDE
+.env
+.vscode/
+.idea/
