@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/banner.jpg" alt="AgentCouncil — Multi-Agent CLI Orchestrator" width="100%" />
+
 # 🏛️ AgentCouncil
 
 **Autonomous Multi-Agent CLI Orchestrator for Software Engineering**
